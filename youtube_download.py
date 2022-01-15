@@ -33,22 +33,33 @@ Streams onde progressive = true tem o audio e o video no mesmo arquivo
 """
 
 def cria_lista_de_opcoes(video_obj):
-	yt_videos = video_obj.streams.filter(progressive=True)
-	yt_videos_dict = {}; count = 0; video_options = []
-	for item in yt_videos:
-		yt_videos_dict[item.resolution] = item.itag
-	for option in yt_videos_dict.keys():
-		count+=1
-		video_options.append(option)
-	return video_options, yt_videos_dict
+  yt_stream_list = video_obj.streams.filter(progressive=True)
+  stream_options =[]
+  for item in yt_stream_list:
+    stream_options.append([item.itag, item.resolution])
+  return stream_options
 
+def show_user_option(stream_options):
+  i=0
+  print("Resoluções disponíveis para download : ")
+  for item in stream_options:
+    print(i, '- ', item[1])
+    i+=1
+  print('Escolha sua resolução: ')
 
-def escolher_resolucao(video_obj):
-	print("Resoluções disponíveis para download :")
-	print('Escolha sua resolução: ')
-	#choice=input('?')
-	#return choice
-	return 0
+def get_user_option(stream_options):
+  try:
+    choice = input( " ? " )
+    int_choice = int(choice)
+    itag = stream_options[int_choice][0] 
+    return itag
+  except Exception as error:
+    exception_routine(error)
+
+def exception_routine(error):
+  print("Opção inválida !!!")
+  print("Erro: ", str(error))
+  raise SystemExit
 
 from pytube import YouTube
 DOWNLOAD_FOLDER = "./downloads"
@@ -58,23 +69,12 @@ video_url = "https://www.youtube.com/watch?v=U6brR0LGo8A"
 video_obj = YouTube(video_url)
 #stream = video_obj.streams.get_highest_resolution()
 #stream.download(DOWNLOAD_FOLDER)
-video_options, yt_videos_dict = cria_lista_de_opcoes(video_obj)
-choice = escolher_resolucao(video_obj)
 
-try:
-  print('==> ',video_options[int(choice)])
-  itag = (yt_videos_dict[video_options[int(choice)]])
-  print("Iniciando download")
-
-  print('Título...: ',video_obj.title)
-  selected_stream = video_obj.streams.get_by_itag(itag)
-  selected_stream.download()
-  print("Download concluído com sucesso")
-  
-except Exception as error:
-  print('Opção inválida!')
-  print(str(error))
-
+stream_options = cria_lista_de_opcoes(video_obj)
+show_user_option(stream_options)
+user_choice_itag = get_user_option(stream_options)
+selected_stream = video_obj.streams.get_by_itag(user_choice_itag)
+selected_stream.download()
 print("Encerrado com sucesso")
 
 
