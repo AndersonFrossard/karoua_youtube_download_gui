@@ -21,6 +21,13 @@ def show_user_option(stream_options):
     i+=1
   print('Escolha sua resolução: ')
 
+
+def get_user_url():
+	print('Exemplo: https://www.youtube.com/watch?v=U6brR0LGo8A')
+	print('Insira a URL do vídeo :')
+	video_url = input(' ==> ')
+	return video_url
+
 def get_user_option(stream_options):
   try:
     choice = input( " ? " )
@@ -57,14 +64,6 @@ def exception_routine(error):
     print(str(error))
   raise SystemExit
 
-def main():
-	stream_options = cria_lista_de_opcoes(video_obj)
-	show_user_option(stream_options)
-	user_choice_itag = get_user_option(stream_options)
-	selected_stream = video_obj.streams.get_by_itag(user_choice_itag)
-	selected_stream.download()
-	print("Encerrado com sucesso")
-
 def on_progress_func(stream, chunk, bytes_remaining):
 	total_size = stream.filesize
 	bytes_downloaded = total_size - bytes_remaining
@@ -90,9 +89,9 @@ video_obj = YouTube(video_url)
 DOWNLOAD_FOLDER = "./downloads"
 # Israel com Aline
 # QUAIS OS NOMES MAIS POPULARES EM ISRAEL? Atualizado 2022
-video_url = "https://www.youtube.com/watch?v=U6brR0LGo8A"
+#video_url = "https://www.youtube.com/watch?v=U6brR0LGo8A"
 #video_url = "htasdasdastps://www.youtadasdasdsaube.com/watch?v=U6brasdasdasR0LGo8A"
-
+video_url = get_user_url()
 video_obj = YouTube(video_url,
 			on_progress_callback = on_progress_func,
 			on_complete_callback = on_complete_func )
