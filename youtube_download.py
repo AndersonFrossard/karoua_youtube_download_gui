@@ -4,24 +4,6 @@
 
 # https://stackoverflow.com/questions/42422139/how-to-easily-avoid-tkinter-freezing
 
-def get_user_url():
-## TODO: throw exception if user enters a number.	
-	print('Exemplo: https://www.youtube.com/watch?v=U6brR0LGo8A')
-	print('Insira a URL do vídeo :')
-	video_url = input(' ==> ')
-	if video_url == 'teste': video_url = 'https://www.youtube.com/watch?v=U6brR0LGo8A'
-	return video_url
-
-
-def get_user_option(stream_options_dict):
-  try:
-  	stream_options_list = list(stream_options_dict)
-  	choice = input( " ? " )
-  	int_choice = int(choice)
-  	itag = stream_options_dict[stream_options_list[int_choice]]
-  	return itag
-  except Exception as error:
-    exception_routine(error)
 
 def exception_routine(error):
   if type(error) == IndexError:
@@ -88,6 +70,8 @@ def on_btn_load_cliked():
 		video_obj = YouTube(video_url,
 			on_progress_callback = on_progress_func,
 			on_complete_callback = on_complete_func)
+		print(video_obj.title)
+		str_var_movie_title.set(video_obj.title)
 		create_stream_options(video_obj, stream_options_dict)
 		gui_populate_combox()
 		gui_lbl_information.set("...Options Loaded...")
@@ -143,6 +127,8 @@ def create_filename(stream):
 def is_stream_audio_only(stream):
 	return not stream.includes_video_track
 
+
+
 def is_cli():
 	for item in sys.argv:
 		if 'nogui' in item.lower():
@@ -157,23 +143,49 @@ def show_user_option(stream_options):
     i+=1
   print('Escolha sua resolução: ')
 
-def run_terminal():
-	print(' -=-=-=-=-= Running on Terminal =-=-=-=-=-')
-	DOWNLOAD_FOLDER = "./downloads"
-	url_test = "https://www.youtube.com/watch?v=U6brR0LGo8A"
-	video_url = get_user_url()
-	if video_url == 'teste' : video_url = url_test
+def get_user_url():
+## TODO: throw exception if user enters a number.	
+	try:
+	  print('Exemplo: https://www.youtube.com/watch?v=U6brR0LGo8A')
+	  print('Insira a URL do vídeo :')
+	  video_url = input(' ==> ')
+	  if video_url == 'teste': video_url = 'https://www.youtube.com/watch?v=U6brR0LGo8A'
+	  return video_url
+	except Exception as error:
+	  print('erro')
+	  SystemExit
 
-	video_obj = YouTube(video_url,
-			on_progress_callback = on_progress_func,
-			on_complete_callback = on_complete_func )
-	
-	stream_options = create_stream_options(video_obj, dict())
-	show_user_option(stream_options)
-	user_choice_itag = get_user_option(stream_options)
-	stream = video_obj.streams.get_by_itag(user_choice_itag)
-	new_filename = create_filename(stream)
-	stream.download(DOWNLOAD_FOLDER, filename = new_filename)
+def get_user_option(stream_options_dict):
+  try:
+  	stream_options_list = list(stream_options_dict)
+  	choice = input( " ? " )
+  	int_choice = int(choice)
+  	itag = stream_options_dict[stream_options_list[int_choice]]
+  	return itag
+  except Exception as error:
+    exception_routine(error)
+
+
+def run_terminal():
+	try:
+		print(' -=-=-=-=-= Running on Terminal =-=-=-=-=-')
+		DOWNLOAD_FOLDER = "./downloads"
+		url_test = "https://www.youtube.com/watch?v=U6brR0LGo8A"
+		video_url = get_user_url()
+		if video_url == 'teste' : video_url = url_test
+
+		video_obj = YouTube(video_url,
+				on_progress_callback = on_progress_func,
+				on_complete_callback = on_complete_func )
+		
+		stream_options = create_stream_options(video_obj, dict())
+		show_user_option(stream_options)
+		user_choice_itag = get_user_option(stream_options)
+		stream = video_obj.streams.get_by_itag(user_choice_itag)
+		new_filename = create_filename(stream)
+		stream.download(DOWNLOAD_FOLDER, filename = new_filename)
+	except Exception as error:
+		exception_routine(error)
 	
 #/-==============================================================
 #/-
@@ -205,7 +217,7 @@ global video_obj
 global DOWNLOAD_FOLDER
 global gui_lbl_information
 WIDTH = 504
-HEIGHT = 286
+HEIGHT = 326
 
 stream_options = []
 stream_options_dict = dict()
@@ -236,6 +248,14 @@ labelframe_b.pack(side = tkinter.TOP,
 				 fill="both", expand="yes",
 				 padx = 12, pady = 12)
 
+labelframe_b2 = tkinter.LabelFrame(root, text = "Movie Title",
+				bg=root_color, bd = 3)
+labelframe_b2.pack(side = tkinter.TOP,
+				 fill="both", expand="yes",
+				 padx = 12, pady = 12)
+
+
+
 labelframe_c = tkinter.LabelFrame(root,
 				 text = "Choose your resolution", bg = root_color)
 labelframe_c.pack(side = tkinter.BOTTOM,
@@ -255,6 +275,13 @@ tk_btn_load = tkinter.Button(labelframe_b, text='LOAD',
 			 command= 
 			 lambda : thread_on_btn_load_clicked())
 tk_btn_load.pack(side = tkinter.BOTTOM, expand=True, padx = 5, pady = 5)
+
+str_var_movie_title = tkinter.StringVar()
+str_var_movie_title.set("Not yet loaded")
+tk_lbl_movie_title = tkinter.Label(labelframe_b2, textvariable = str_var_movie_title,
+				 bg=root_color, bd=5)
+tk_lbl_movie_title.pack(side = tkinter.LEFT, padx = 5, pady = 5)
+
 
 
 tk_mycombox = tkinter.ttk.Combobox(labelframe_c,
