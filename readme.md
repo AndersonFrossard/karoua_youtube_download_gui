@@ -1,5 +1,3 @@
-
-
 	# Karoua Youtube Download GUI
 
 	<h2>Download youtube videos</h2>
