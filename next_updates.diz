@@ -2,7 +2,7 @@
 
 
 Karoua Youtube Downloader
- =======================================================================
+======================================
 
               -=-=-=-= Implementations to do =-=-=-=-
 
@@ -10,7 +10,7 @@ Karoua Youtube Downloader
   SOME FEATURES YET TO BE IMPLEMENTED:
   -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  ** GUI Interface.
+  DONE!! ** GUI Interface.
 
   ** Default resolution to download
 
@@ -22,5 +22,5 @@ Karoua Youtube Downloader
 
   ** German translation
 
-  ** English translation
+  DONE !! ** English translation
 
