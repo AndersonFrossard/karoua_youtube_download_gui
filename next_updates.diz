@@ -7,20 +7,29 @@ Karoua Youtube Downloader
               -=-=-=-= Implementations to do =-=-=-=-
 
 
-  SOME FEATURES YET TO BE IMPLEMENTED:
+   SOME FEATURES YET TO BE IMPLEMENTED:<br>
   -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  DONE!! ** GUI Interface.
+- [X]GUI Interface.
 
-  ** Default resolution to download
+- [ ]Default resolution to download
 
-  ** Progress bar
+- [ ]Progress bar
 
-  ** Mobile version
+- [ ]Mobile version
 
-  ** Web version
+- [ ]Web version
 
-  ** German translation
+- [ ]German translation
 
-  DONE !! ** English translation
+- [X]English translation
+
+
+
+<div style="text-align: center; ">
+
+![Astro Marine Corps](./img/astro01.png)
+
+> Image: MSX - Astro Marine Corps
+</div>
 

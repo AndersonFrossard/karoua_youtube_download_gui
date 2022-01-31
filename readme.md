@@ -17,17 +17,19 @@ My software is straight to the point:</p>
 
 This version has a GUI interface but it also runs on CLI.
 
-<h2>Running with GUI interfacellllppooobbaa:</h2>
+<h2>Running with GUI interfacel:</h2>
 
 	python youtube_download.py
 
-[![image01.png](./img/image01.png)]
-[![image info](image01.png)]
-![title](img\image01.png)
+![GUI interface](./img/image01.png)
+
+
 
 
 <h2>Running with CLI interface:</h2>
 
 	python youtube_download.py --nogui
+
+![CLI interface](./img/image02.png)
 
 Enjoy!
