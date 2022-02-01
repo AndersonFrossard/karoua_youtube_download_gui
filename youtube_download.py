@@ -1,3 +1,6 @@
+#https://stackoverflow.com/questions/40716346/windows-pyinstaller-error-failed-to-execute-script-when-app-clicked
+# https://wiki.python.org/moin/WindowsCompilers
+
 # https://stackoverflow.com/questions/55735775/how-do-i-add-a-progress-bar-to-my-pytube-code
 #Use this option to run under google colab:
 #from pytube import exceptions 
@@ -6,40 +9,41 @@
 
 
 def exception_routine(error):
-  if type(error) == IndexError:
-    print('Opção inválida !! ')
-  elif type(error) == KeyError:
-  	print('Noob User did not choose a resolution and clicked on DOWNLOAD button. Afff.')
-  elif type(error) == ValueError:
-    print('Opção inválida. Somente números são permitidos.')
-  elif type(error) == pytube.exceptions.VideoUnavailable:
-    print('Erro: Vídeo não disponível.')
-    print('Você entrou com a URL correta? Utilizar conforme o exemplo :')
-    print('https://www.youtube.com/watch?v=NNNNNNNNNNN')
-  elif type(error) == pytube.exceptions.VideoPrivate:
-      print('Erro: Vídeo é privado. Download não disponível.')
-  elif type(error) == pytube.exceptions.LiveStreamError:
-      print('Erro: Vídeo é uma live. Download não disponível.')
-  elif type(error) == pytube.exceptions.AgeRestrictedError:
-      print('Video is age restricted, and cannot be accessed without OAuth.')
-  elif type(error) == pytube.exceptions.MaxRetriesExceeded:
-      print('Maximum number of retries exceeded.')
-  elif type(error) == pytube.exceptions.MembersOnly:
-      print('Error: Video is members-only.')
-      print('YouTube has special videos that  are only viewable to users who')
-      print('have subscribed to a content creator')
-  elif type(error) == pytube.exceptions.VideoRegionBlocked:
-      print('Error: Video is blocked to your region. Try using a VPN.')
-  else:
-    print(str(error))
-  print('Program Terminated.')
-  raise SystemExit
+	if type(error) == IndexError:
+		print('Opção inválida !! ')
+	elif type(error) == KeyError:
+		print('Noob User did not choose a resolution and clicked on DOWNLOAD button. Afff.')
+	elif type(error) == ValueError:
+		print('Opção inválida. Somente números são permitidos.')
+	elif type(error) == pytube.exceptions.VideoUnavailable:
+		print('Erro: Vídeo não disponível.')
+		print('Você entrou com a URL correta? Utilizar conforme o exemplo :')
+		print('https://www.youtube.com/watch?v=NNNNNNNNNNN')
+	elif type(error) == pytube.exceptions.VideoPrivate:
+		print('Erro: Vídeo é privado. Download não disponível.')
+	elif type(error) == pytube.exceptions.LiveStreamError:
+		print('Erro: Vídeo é uma live. Download não disponível.')
+	elif type(error) == pytube.exceptions.AgeRestrictedError:
+		print('Video is age restricted, and cannot be accessed without OAuth.')
+	elif type(error) == pytube.exceptions.MaxRetriesExceeded:
+		print('Maximum number of retries exceeded.')
+	elif type(error) == pytube.exceptions.MembersOnly:
+		print('Error: Video is members-only.')
+		print('YouTube has special videos that  are only viewable to users who')
+		print('have subscribed to a content creator')
+	elif type(error) == pytube.exceptions.VideoRegionBlocked:
+		print('Error: Video is blocked to your region. Try using a VPN.')
+	else:
+		print(str(error))
+		print('Program Terminated.')
+		raise SystemExit
 
 def on_progress_func(stream, chunk, bytes_remaining):
 	total_size = stream.filesize
 	bytes_downloaded = total_size - bytes_remaining
 	percentage_of_completion = int (bytes_downloaded / total_size * 100)
-	print("\r Downloading ...... %d%%" % percentage_of_completion,end="")
+	print("\r Downloading ...... %d%%" % percentage_of_completion)
+	#print("\r Downloading ...... %d%%" % percentage_of_completion, end="")
 	try:
 		gui_lbl_information.set("Downloading ...... %d%%" % percentage_of_completion)
 	except Exception as e:
@@ -136,34 +140,35 @@ def is_cli():
 	return False
 
 def show_user_option(stream_options):
-  i=0
-  print("Resoluções disponíveis para download : ")
-  for item in stream_options.keys():
-    print(i, '- ', item)
-    i+=1
-  print('Escolha sua resolução: ')
+	i=0
+	print("Resoluções disponíveis para download : ")
+	for item in stream_options.keys():
+		print(i, '- ', item)
+		i+=1
+	print('Escolha sua resolução: ')
 
 def get_user_url():
 ## TODO: throw exception if user enters a number.	
 	try:
-	  print('Exemplo: https://www.youtube.com/watch?v=U6brR0LGo8A')
-	  print('Insira a URL do vídeo :')
-	  video_url = input(' ==> ')
-	  if video_url == 'teste': video_url = 'https://www.youtube.com/watch?v=U6brR0LGo8A'
-	  return video_url
+		print('Exemplo: https://www.youtube.com/watch?v=U6brR0LGo8A')
+		print('Insira a URL do vídeo :')
+		video_url = input(' ==> ')
+		if video_url == 'teste': video_url = 'https://www.youtube.com/watch?v=U6brR0LGo8A'
+		return video_url
 	except Exception as error:
-	  print('erro')
-	  SystemExit
+		print('erro')
+		SystemExit
 
 def get_user_option(stream_options_dict):
-  try:
-  	stream_options_list = list(stream_options_dict)
-  	choice = input( " ? " )
-  	int_choice = int(choice)
-  	itag = stream_options_dict[stream_options_list[int_choice]]
-  	return itag
-  except Exception as error:
-    exception_routine(error)
+
+	try:
+		stream_options_list = list(stream_options_dict)
+		choice = input( " ? " )
+		int_choice = int(choice)
+		itag = stream_options_dict[stream_options_list[int_choice]]
+		return itag
+	except Exception as error:
+		exception_routine(error)
 
 
 def run_terminal():
@@ -211,6 +216,8 @@ if is_cli():
 example_url = 'https://www.youtube.com/watch?v=U6brR0LGo8A'
 program_name = 'Karoua YouTube Downloader'
 program_icon_path = './img/Graphics-Vibe-Classic-3d-Social-Youtube.ico'
+#program_icon_path = './img/youtube.ico'
+#program_icon_path = 'youtube.xbm'
 global stream_options
 global stream_options_dict
 global video_obj
@@ -235,7 +242,7 @@ lblframe_b_color = "#b3dca0"
 lblframe_c_color = "#008080"
 root.configure(bg = root_color)
 root.title(program_name)
-root.iconbitmap(program_icon_path)
+root.iconbitmap(default = program_icon_path)
 labelframe_a = tkinter.LabelFrame(root, text="Example",
 				bg=root_color)
 labelframe_a.pack(side = tkinter.TOP, 
