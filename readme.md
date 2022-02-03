@@ -1,7 +1,26 @@
 
-# Karoua Youtube Download Gui
 
-<h2>Download youtube videos</h2>
+<h1 align="center">Karoua Youtube Download Gui</h1>
+
+<p align="center">Download Youtube Videos or Music easily</p>
+<div align="center">
+<img src="https://img.shields.io/static/v1?label=Media&labelColor=black&message=Download&color=7159c1&style=for-the-badge&logo=python"/>
+</div>
+
+Table of contents
+===============
+<!--ts-->
+* [About](#about)
+* [Instalacao](#instalacao)
+* [Como usar](#como-usar)
+	* [Pré Requisitos](#pre-requisitos)
+	* [Gui](#gui)
+	* [Command-line interface](#cli)
+	* [Standalone](#standalone)
+*	[Public key](#public-key)
+*	[Tecnologias](#tecnologias****)
+<!--te-->
+
 
 <p>Hi.</p>
 <p>There are many youtube downloaders scattered around the web.
