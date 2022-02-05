@@ -29,7 +29,7 @@ Table of contents
 - [Autor](#autor)
 <!--te-->
 
-## About
+### About
 
 ### Header Name
 
@@ -48,8 +48,8 @@ My software is straight to the point:</p>
   <li>Download</li>
 </ul>      
 
-###features
-- [x] Gui Interface
+### Features
+- [X] Gui Interface
 - [x] Download video
 - [x] Download audio
 - [ ] Download full-playlist
