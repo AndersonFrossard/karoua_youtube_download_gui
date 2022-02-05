@@ -13,7 +13,7 @@ Table of contents
 
 - [About](#about)
 - [Features](#features)
-- [Instalation and how to use](#how-to)
+- [Instalation and how to use](#Instalation and how to use)
 	* [Requirements](##requirements)
 	
 	* [Gui](#gui)
@@ -46,11 +46,8 @@ My software is straight to the point:</p>
 - [x] Download audio
 - [ ] Download full-playlist
 
-## how-to
-
-
 ## Instalation and how to use
-------
+
 
 ##requirements
 
