@@ -1,6 +1,9 @@
 
 
 <h1 align="center">Karoua Youtube Download Gui</h1>
+<a id="my-anchor">aaa</a>
+
+[Header Name](#header-name)
 
 <p align="center">Download Youtube Videos or Music easily</p>
 <div align="center">
@@ -10,17 +13,28 @@
 Table of contents
 ===============
 <!--ts-->
-* [About](#about)
-* [Instalacao](#instalacao)
-* [Como usar](#como-usar)
-	* [Pré Requisitos](#pre-requisitos)
+
+- [About](#about)
+- [Features](#features)
+* [Instalation and how to use](#how-to)
+	* [Requirements](##requirements)
+	
 	* [Gui](#gui)
+	
 	* [Command-line interface](#cli)
+	
 	* [Standalone](#standalone)
 *	[Public key](#public-key)
-*	[Tecnologias](#tecnologias****)
+*	[Tecnologies](#tecnologias****)
+- [Autor](#autor)
 <!--te-->
 
+## About
+
+### Header Name
+
+[see aaa above](#my-anchor)
+<p id="#cont">Contributing</p> •  
 
 <p>Hi.</p>
 <p>There are many youtube downloaders scattered around the web.
@@ -33,6 +47,26 @@ My software is straight to the point:</p>
   <li>Choose resolution</li>
   <li>Download</li>
 </ul>      
+
+###features
+- [x] Gui Interface
+- [x] Download video
+- [x] Download audio
+- [ ] Download full-playlist
+
+# Instalation and how to use
+
+------
+
+##requirements
+
+>pytube 11.0.2 or greater
+
+If you do not have pytube installed, you can install it by running this command:
+
+	pip install pytube
+<a href="#cont">Contributing</a> •  
+#GUI
 
 This version has a GUI interface but it also runs on CLI.
 
@@ -53,22 +87,22 @@ This version has a GUI interface but it also runs on CLI.
 
 
 ## Standalone executable for Windows:
-Perhaps you do not have python installed or you cant install python in your machine and just want a fast way to get things running. The standalone executable is perfect choice.
+Perhaps you do not have python installed or you cant install python in your machine and just want a fast way to get things running. The standalone executable will suit you well.
 <ul>
 	<li>Download the zip file, unzip it into a new folder</li>
-	<li>Download CRC checksum file</li>
-	<li>Download my PGP public key</li>		
+	<li>Check  integrity of zip file's content (optional)</li>
+	<li>Double click on youtube_download.exe </li>
 </ul>
 
 ### How to check the zipfile has not been tampered with:
 
-#### First, you need to check if my public key has not been hacked or tampered with. In order to do that, you should download my public pgp key at least in two different sourcers and check if they are the same. If they are the same and have not been revoked, good, the key is valid and secure for use. 
+#### First, you need to download my pgp public key and  check if my public key has not been hacked or tampered with. In order to do that, you should download my public pgp key from two different sources. They must be the same. If they are the same and have not been revoked, good, the key is valid and secure for use. 
 
 #### Visit the following address:
 
 <a href = "http://keyserver2.pgp.com"> PGP Global Directory</a>
 
-Search for my pgp fingerprint:
+Search for my Public Key pgp fingerprint:
 
 	46C1 8DF7
 
@@ -110,6 +144,13 @@ The hash should be exactly the same. You are safe to unzip and run the executabl
 		<td>youtube_download.zip</td>
 	</tr>
 </table>
-
-
 Enjoy!
+
+(#autor)
+### Autor
+---
+
+ <img style="border-radius: 50%;" src="https://i.postimg.cc/Rqf7nM29/maxresdefault.jpg" width="100px;" alt=""/>Anderson Frossard
+
+Done with ❤️ by Anderson Frossard 👋🏽 Get in contact!
+[![Gmail Badge](https://img.shields.io/badge/frossard2008@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:frossard2008@gmail.com)](mailto:frossard2008@gmail.com)
