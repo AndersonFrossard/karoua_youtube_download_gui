@@ -105,8 +105,11 @@ or directly  here:
 
 https://keyserver2.pgp.com/vkd/DownloadKey.event?keyid=0xB79AAE8846C18DF7 
 
+or here:
 
-Download the provided file and compare with pgp public key here on my github. If they are the same, perfect, you are good to go.
+[![PGP 0x46C18DF7](https://peegeepee.com/badge/orange/46C18DF7.svg)](https://d.peegeepee.com/921D2E998D1E3213DFCF74F7B79AAE8846C18DF7.asc)
+
+Download the provided file and compare with [my Public Key at Github](https://github.com/AndersonFrossard/karoua_youtube_download_gui/tree/main/standalone/frossard_public_key.asc) . If they are exactly the same, perfect, you are good to go.
 
 Import my pgp public signature key:
 
@@ -159,23 +162,22 @@ My PGP public key fingerprint key ID is:
 	46C1 8DF7
 
 Enjoy!
-![Brazil](https://i.postimg.cc/rzyDS8v4/flag-br.png)
-![Deutschland](https://i.postimg.cc/V57dgx8V/flag-de.png)
 
-![Deutschland](https://i.postimg.cc/V57dgx8V/flag-de.png)
 
-![asda](https://i.postimg.cc/vHyfYySb/flag-de.png)
 
-<a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/vHyfYySb/flag-de.png" alt="flag-de"/></a><br/><br/>
 
-:de:
-:br:
+
 ### Autor
 ---
+[![flag-br-mini-mini.png](https://i.postimg.cc/DyXTfVHf/flag-br-mini-mini.png)](https://postimg.cc/Xp4hxPnt)
+ [![flag-de-mini-mini.png](https://i.postimg.cc/4xGNrNyR/flag-de-mini-mini.png)](https://postimg.cc/nCdJmxq3)
+ ✈️ ::statue_of_liberty::
+ 
 <a href="https://github.com/AndersonFrossard" title="GitHub">
 <img style="border-radius: 50%;" src="https://i.postimg.cc/Rqf7nM29/maxresdefault.jpg" width="100px;" alt=""/>
- <sub><b>Anderson Frossard</b></sub></a> <a href="https://github.com/AndersonFrossard" title="GitHub">  🇧🇷 ![img](https://i.postimg.cc/rzyDS8v4/flag-br.png)   ✈️ ::statue_of_liberty::</a>
- 
+ <sub><b><br />Anderson Frossard</b></sub></a>
+  
+<br />
+Done with ❤️ by Anderson Frossard 👋🏽 Get in contact!<br/><br/>
 
-Done with ❤️ by Anderson Frossard 👋🏽 Get in contact!<br>
 [![Gmail Badge](https://img.shields.io/badge/frossard2008@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:frossard2008@gmail.com)](mailto:frossard2008@gmail.com)
