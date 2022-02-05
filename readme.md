@@ -58,19 +58,19 @@ If you do not have pytube installed, you can install it by running this command:
 	pip install pytube
 
 
-## GUI
+## GUI - Graphical User Interface
 
-This version has a GUI interface but it also runs on CLI.
+This version runs both on GUI and CLI.
 
-<h2>Running with GUI interface:</h2>
+<h2>Running with GUI :</h2>
 
 	python youtube_download.py
 
 ![GUI interface](./img/image01.png)
 
-## CLI
+## CLI - Command Line Interface
 
-<h2>Running with CLI interface:</h2>
+<h2>Running with CLI :</h2>
 
 	python youtube_download.py --nogui
 
@@ -78,16 +78,19 @@ This version has a GUI interface but it also runs on CLI.
 
 ## Standalone executable for Windows:
 
-Perhaps you do not have python installed or you cant install python in your machine and just want a fast way to get things running. The standalone executable will suit you well.
+Perhaps you just want a fast way to get things running. The standalone executable will suit you well.
 <ul>
-	<li>Download the zip file, unzip it into a new folder</li>
+	<li>Download the zip file</li>
 	<li>Check  integrity of zip file's content (optional)</li>
+	<li>Unzip the zip file into a new folder</li>
+	<li>Check CRC of its content (optional)
 	<li>Double click on youtube_download.exe </li>
 </ul>
 
 ### How to check the zipfile has not been tampered with:
 
-#### First, you need to download my pgp public key and  check if my public key has not been hacked or tampered with. In order to do that, you should download my public pgp key from two different sources. They must be the same. If they are the same and have not been revoked, good, the key is valid and secure for use. 
+First, you need to download my pgp public key and  check if my public key has not been hacked or tampered with. In order to do that, you should download my public pgp key from two different sources. They must be the same. If they are the same and have not been revoked, good, the key is valid and secure for use. 
+
 
 #### Visit the following address:
 
@@ -135,13 +138,35 @@ The hash should be exactly the same. You are safe to unzip and run the executabl
 		<td>youtube_download.zip</td>
 	</tr>
 </table>
+
+## Public-key
+
+My PGP public key is avaiable at:
+
+[Public Key at Github](https://github.com/AndersonFrossard/karoua_youtube_download_gui/tree/main/standalone/frossard_public_key.asc)
+
+[PGP Global Directory](https://keyserver2.pgp.com/vkd/DownloadKey.event?keyid=0xB79AAE8846C18DF7)
+
+[![PGP 0x46C18DF7](https://peegeepee.com/badge/orange/46C18DF7.svg)](https://d.peegeepee.com/921D2E998D1E3213DFCF74F7B79AAE8846C18DF7.asc)
+
+
+My PGP public key full fingerprint is:
+
+	921D 2E99 8D1E 3213 DFCF 74F7 B79A AE88 46C1 8DF7
+	
+My PGP public key fingerprint key ID is:
+
+	46C1 8DF7
+
 Enjoy!
 
-(#autor)
+
 ### Autor
 ---
 
- <img style="border-radius: 50%;" src="https://i.postimg.cc/Rqf7nM29/maxresdefault.jpg" width="100px;" alt=""/>Anderson Frossard
+ <img style="border-radius: 50%;" src="https://i.postimg.cc/Rqf7nM29/maxresdefault.jpg" width="100px;" alt=""/>
+ <br> <sub><b>Anderson Frossard</b></sub></a> <a href="https://github.com/AndersonFrossard" title="GitHub">:suspect:</a>
+ 
 
 Done with ❤️ by Anderson Frossard 👋🏽 Get in contact!
 [![Gmail Badge](https://img.shields.io/badge/frossard2008@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:frossard2008@gmail.com)](mailto:frossard2008@gmail.com)
