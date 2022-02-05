@@ -48,7 +48,7 @@ My software is straight to the point:</p>
   <li>Download</li>
 </ul>      
 
-### Features
+## Features
 - [X] Gui Interface
 - [x] Download video
 - [x] Download audio
