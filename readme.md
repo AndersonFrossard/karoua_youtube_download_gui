@@ -46,7 +46,7 @@ My software is straight to the point:</p>
 - [x] Download audio
 - [ ] Download full-playlist
 
-## Instalation and how to use
+### Instalation and how to use
 
 
 ##requirements
