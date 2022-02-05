@@ -159,13 +159,22 @@ My PGP public key fingerprint key ID is:
 	46C1 8DF7
 
 Enjoy!
+![Brazil](https://i.postimg.cc/rzyDS8v4/flag-br.png)
+![Deutschland](https://i.postimg.cc/V57dgx8V/flag-de.png)
 
+![Deutschland](https://i.postimg.cc/V57dgx8V/flag-de.png)
 
+![asda](https://i.postimg.cc/vHyfYySb/flag-de.png)
+
+<a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/vHyfYySb/flag-de.png" alt="flag-de"/></a><br/><br/>
+
+:de:
+:br:
 ### Autor
 ---
-
+<a href="https://github.com/AndersonFrossard" title="GitHub">
 <img style="border-radius: 50%;" src="https://i.postimg.cc/Rqf7nM29/maxresdefault.jpg" width="100px;" alt=""/>
- <sub><b>Anderson Frossard</b></sub></a> <a href="https://github.com/AndersonFrossard" title="GitHub">  🇧🇷 🇩🇪️  ✈️ ::statue_of_liberty::</a>
+ <sub><b>Anderson Frossard</b></sub></a> <a href="https://github.com/AndersonFrossard" title="GitHub">  🇧🇷 ![img](https://i.postimg.cc/rzyDS8v4/flag-br.png)   ✈️ ::statue_of_liberty::</a>
  
 
 Done with ❤️ by Anderson Frossard 👋🏽 Get in contact!<br>
