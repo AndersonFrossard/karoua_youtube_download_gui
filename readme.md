@@ -1,9 +1,6 @@
 
 
 <h1 align="center">Karoua Youtube Download Gui</h1>
-<a id="my-anchor">aaa</a>
-
-[Header Name](#header-name)
 
 <p align="center">Download Youtube Videos or Music easily</p>
 <div align="center">
@@ -16,7 +13,7 @@ Table of contents
 
 - [About](#about)
 - [Features](#features)
-* [Instalation and how to use](#how-to)
+- [Instalation and how to use](#how-to)
 	* [Requirements](##requirements)
 	
 	* [Gui](#gui)
@@ -29,12 +26,7 @@ Table of contents
 - [Autor](#autor)
 <!--te-->
 
-### About
-
-### Header Name
-
-[see aaa above](#my-anchor)
-<p id="#cont">Contributing</p> •  
+## About
 
 <p>Hi.</p>
 <p>There are many youtube downloaders scattered around the web.
@@ -54,7 +46,7 @@ My software is straight to the point:</p>
 - [x] Download audio
 - [ ] Download full-playlist
 
-# Instalation and how to use
+## how-to
 
 ------
 
