@@ -164,9 +164,9 @@ Enjoy!
 ### Autor
 ---
 
- <img style="border-radius: 50%;" src="https://i.postimg.cc/Rqf7nM29/maxresdefault.jpg" width="100px;" alt=""/>
- <br> <sub><b>Anderson Frossard</b></sub></a> <a href="https://github.com/AndersonFrossard" title="GitHub">:suspect:</a>
+<img style="border-radius: 50%;" src="https://i.postimg.cc/Rqf7nM29/maxresdefault.jpg" width="100px;" alt=""/>
+ <sub><b>Anderson Frossard</b></sub></a> <a href="https://github.com/AndersonFrossard" title="GitHub">  🇧🇷 🇩🇪️  ✈️ ::statue_of_liberty::</a>
  
 
-Done with ❤️ by Anderson Frossard 👋🏽 Get in contact!
+Done with ❤️ by Anderson Frossard 👋🏽 Get in contact!<br>
 [![Gmail Badge](https://img.shields.io/badge/frossard2008@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:frossard2008@gmail.com)](mailto:frossard2008@gmail.com)
