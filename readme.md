@@ -13,16 +13,16 @@ Table of contents
 
 - [About](#about)
 - [Features](#features)
-- [Instalation and how to use](#Instalation and how to use)
-	* [Requirements](##requirements)
+- [Instalation and how to use](#instalation-and-how-to-use)
+	- [Requirements](#requirements)
 	
-	* [Gui](#gui)
+	- [GUI - Graphical User Interface](#gui)
 	
-	* [Command-line interface](#cli)
+	- [Command-line interface](#cli)
 	
-	* [Standalone](#standalone)
-*	[Public key](#public-key)
-*	[Tecnologies](#tecnologias****)
+	- [Windows Standalone](#standalone)
+-	[Public key](#public-key)
+-	[Tecnologies](#tecnologies)
 - [Autor](#autor)
 <!--te-->
 
@@ -46,18 +46,19 @@ My software is straight to the point:</p>
 - [x] Download audio
 - [ ] Download full-playlist
 
-### Instalation and how to use
+## instalation-and-how-to-use
 
 
-##requirements
+### requirements
 
 >pytube 11.0.2 or greater
 
 If you do not have pytube installed, you can install it by running this command:
 
 	pip install pytube
-<a href="#cont">Contributing</a> •  
-#GUI
+
+
+## GUI
 
 This version has a GUI interface but it also runs on CLI.
 
@@ -67,8 +68,7 @@ This version has a GUI interface but it also runs on CLI.
 
 ![GUI interface](./img/image01.png)
 
-
-
+## CLI
 
 <h2>Running with CLI interface:</h2>
 
@@ -76,8 +76,8 @@ This version has a GUI interface but it also runs on CLI.
 
 ![CLI interface](./img/image02.png)
 
-
 ## Standalone executable for Windows:
+
 Perhaps you do not have python installed or you cant install python in your machine and just want a fast way to get things running. The standalone executable will suit you well.
 <ul>
 	<li>Download the zip file, unzip it into a new folder</li>
