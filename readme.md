@@ -95,7 +95,7 @@ They must have the same fingerprint and must not have been revoked.
 
 	gpg --show-keys filename1.asc
  
- ![Checking fingerprints](./img/image03.png)
+ ![Checking fingerprints](./img/image04.png)
  
  If they are the same and have not been revoked, good, the key is valid and secure for use. 
 
