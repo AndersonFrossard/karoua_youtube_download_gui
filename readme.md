@@ -87,9 +87,17 @@ Perhaps you just want a fast way to get things running. The standalone executabl
 	<li>Double click on youtube_download.exe </li>
 </ul>
 
-### How to check the zipfile has not been tampered with:
+### How to check whether the zipfile has not been tampered with:
 
-First, you need to download my pgp public key and  check if my public key has not been hacked or tampered with. In order to do that, you should download my public pgp key from two different sources. They must be the same. If they are the same and have not been revoked, good, the key is valid and secure for use. 
+First, you need to download my pgp public key and  check if my public key has not been hacked or tampered with. In order to do that, you should download my public pgp key from two different sources.
+They must have the same fingerprint and must not have been revoked.
+ Run this command to check fingerprint from diferent files:
+
+	gpg --show-keys filename1.asc
+ 
+ ![Checking fingerprints](./img/image03.png)
+ 
+ If they are the same and have not been revoked, good, the key is valid and secure for use. 
 
 
 #### Visit the following address:
