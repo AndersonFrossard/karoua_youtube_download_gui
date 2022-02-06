@@ -89,8 +89,12 @@ Perhaps you just want a fast way to get things running. The standalone executabl
 
 ### How to check whether the zipfile has not been tampered with:
 
-First, you need to download my pgp public key and  check if my public key has not been hacked or tampered with. In order to do that, you should download my public pgp key from two different sources.
+First, you need to download my pgp public key and check if my public key has not been hacked or tampered with. In order to do that, you should download my public pgp key from two different sources.
 They must have the same fingerprint and must not have been revoked.
+
+[Check my Fingerprint here](#fingerprint)
+
+
  Run this command to check fingerprint from diferent files:
 
 	gpg --show-keys filename1.asc
@@ -160,7 +164,7 @@ My PGP public key is avaiable at:
 
 [![PGP 0x46C18DF7](https://peegeepee.com/badge/orange/46C18DF7.svg)](https://d.peegeepee.com/921D2E998D1E3213DFCF74F7B79AAE8846C18DF7.asc)
 
-
+### fingerprint
 My PGP public key full fingerprint is:
 
 	921D 2E99 8D1E 3213 DFCF 74F7 B79A AE88 46C1 8DF7
