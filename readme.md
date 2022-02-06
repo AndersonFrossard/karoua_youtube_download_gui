@@ -3,8 +3,8 @@
 <h1 align="center">Karoua Youtube Download Gui</h1>
 
 <p align="center">Download Youtube Videos or Music easily</p>
-<div align="center">
-<img src="https://img.shields.io/static/v1?label=Media&labelColor=black&message=Download&color=7159c1&style=for-the-badge&logo=python"/>
+<div align="center"><a href="https://github.com/AndersonFrossard/karoua_youtube_download_gui/raw/main/standalone/youtube_download.zip">
+<img src="https://img.shields.io/static/v1?label=Media&labelColor=black&message=Download&color=7159c1&style=for-the-badge&logo=python"/></a>
 </div>
 
 Table of contents
@@ -109,11 +109,11 @@ or here:
 
 [![PGP 0x46C18DF7](https://peegeepee.com/badge/orange/46C18DF7.svg)](https://d.peegeepee.com/921D2E998D1E3213DFCF74F7B79AAE8846C18DF7.asc)
 
-Download the provided file and compare with [my Public Key at Github](https://github.com/AndersonFrossard/karoua_youtube_download_gui/tree/main/standalone/frossard_public_key.asc) . If they are exactly the same, perfect, you are good to go.
+Download the provided file and compare with [my Public Key at Github](https://github.com/AndersonFrossard/karoua_youtube_download_gui/tree/main/standalone/frossard.public.key.asc) . If they are exactly the same, perfect, you are good to go.
 
 Import my pgp public signature key:
 
-	gpg --import andersonFrossard.publ.asc
+	gpg --import frossard.public.key.asc
 
 Check wether youtube_download.zip has been signed by myself:
 
