@@ -97,8 +97,7 @@ They must have the same fingerprint and must not have been revoked.
 
 ### How to obtain my Public keys
 
-#public-key
-
+[Public key](#public-key)
 
 
 ### How to check if the keys are correct and valid:
@@ -152,7 +151,7 @@ My PGP public key is avaiable at:
 
 [![PGP 0x46C18DF7](https://peegeepee.com/badge/orange/46C18DF7.svg)](https://d.peegeepee.com/921D2E998D1E3213DFCF74F7B79AAE8846C18DF7.asc)
 
-### fingerprint
+### Fingerprint
 My PGP public key full fingerprint is:
 
 	921D 2E99 8D1E 3213 DFCF 74F7 B79A AE88 46C1 8DF7
