@@ -3,7 +3,7 @@
 <h1 align="center">Karoua Youtube Download Gui</h1>
 
 <p align="center">Download Youtube Videos or Music easily</p>
-<div align="center"><a href="https://github.com/AndersonFrossard/karoua_youtube_download_gui/raw/main/standalone/youtube_download.zip">
+<div align="center"><a href="https://github.com/AndersonFrossard/karoua_youtube_download_gui/raw/main/standalone/youtube_download_v1.2.zip">
 <img src="https://img.shields.io/static/v1?label=Media&labelColor=black&message=Download&color=7159c1&style=for-the-badge&logo=python"/></a>
 </div>
 
