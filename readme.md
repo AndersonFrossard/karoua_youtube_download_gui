@@ -100,19 +100,16 @@ They must have the same fingerprint and must not have been revoked.
 #public-key
 
 
+
+### How to check if the keys are correct and valid:
+
  Run this command to check fingerprint from diferent files:
 
 	gpg --show-keys filename1.asc
  
  ![Checking fingerprints](./img/image04.png)
  
- If they are the same and have not been revoked, good, the key is valid and secure for use. 
-
-
-
-
-
-Download the provided file and compare with [my Public Key at Github](https://github.com/AndersonFrossard/karoua_youtube_download_gui/tree/main/standalone/frossard.public.key.asc) . If they are exactly the same, perfect, you are good to go.
+ If they both have my [fingerprint](#fingerprint) and have not been revoked, good, the key is valid and secure for use. 
 
 Import my pgp public signature key:
 
