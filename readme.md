@@ -46,10 +46,10 @@ My software is straight to the point:</p>
 - [x] Download audio
 - [ ] Download full-playlist
 
-## instalation-and-how-to-use
+## Instalation-and-how-to-use
 
 
-### requirements
+### Requirements
 
 >pytube 11.0.2 or greater
 
@@ -76,6 +76,7 @@ This version runs both on GUI and CLI.
 
 ![CLI interface](./img/image02.png)
 
+## Standalone
 ## Standalone executable for Windows:
 
 Perhaps you just want a fast way to get things running. The standalone executable will suit you well.
@@ -94,6 +95,10 @@ They must have the same fingerprint and must not have been revoked.
 
 [Check my Fingerprint here](#fingerprint)
 
+### How to obtain my Public keys
+
+#public-key
+
 
  Run this command to check fingerprint from diferent files:
 
@@ -104,22 +109,8 @@ They must have the same fingerprint and must not have been revoked.
  If they are the same and have not been revoked, good, the key is valid and secure for use. 
 
 
-#### Visit the following address:
-
-<a href = "http://keyserver2.pgp.com"> PGP Global Directory</a>
-
-Search for my Public Key pgp fingerprint:
-
-	46C1 8DF7
 
 
-or directly  here:
-
-https://keyserver2.pgp.com/vkd/DownloadKey.event?keyid=0xB79AAE8846C18DF7 
-
-or here:
-
-[![PGP 0x46C18DF7](https://peegeepee.com/badge/orange/46C18DF7.svg)](https://d.peegeepee.com/921D2E998D1E3213DFCF74F7B79AAE8846C18DF7.asc)
 
 Download the provided file and compare with [my Public Key at Github](https://github.com/AndersonFrossard/karoua_youtube_download_gui/tree/main/standalone/frossard.public.key.asc) . If they are exactly the same, perfect, you are good to go.
 
