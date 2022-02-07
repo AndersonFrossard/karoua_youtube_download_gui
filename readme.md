@@ -82,9 +82,8 @@ This version runs both on GUI and CLI.
 Perhaps you just want a fast way to get things running. The standalone executable will suit you well.
 <ul>
 	<li>Download the zip file</li>
-	<li>Check  integrity of zip file's content (optional)</li>
 	<li>Unzip the zip file into a new folder</li>
-	<li>Check CRC of its content (optional)
+	<li>Check  integrity of zip file's content (optional)</li>
 	<li>Double click on youtube_download.exe </li>
 </ul>
 
@@ -123,23 +122,21 @@ To pass verification you should see a message saying
 
 gpg will probably also say this signature is not certified. That´s because you have just downloaded it and have not applied command *trust* to it.
 
-Once the gpg has verified the zip file and been signed by myself, you are safe to unzip it and run its executable.
+Once the gpg has verified the  file has been signed by myself, you are safe to unzip it and run its executable. 
 
-If you want additional step of safety, you can verify the crc.txt file and check wether the hash of downloaded zip file meet the hash indicated in crc.txt file. Here it is:
+Optionally, for aditional security you can hash your youtube_download.exe file and compare with my hash:
 
-	gpg --verify crc.txt.sig
-
-Once sucessfully verified, you are good to hash your downloaded zip file and compare with contents from crc.txt.
-The hash should be exactly the same. You are safe to unzip and run the executable. 
 <table>
 	<tr>
 		<td>SHA-256</td>
 		<td>File</td>
 	<tr>
-		<td>1446056F904BCC639CB844611F69E8218FCE32AB3314E00F676BF80FE659061B</td>
-		<td>youtube_download.zip</td>
+		<td>36F4E8E51035045AD3A79DD7067317DC54CE2ADB6690D6D0972238F1B0AA9D6D</td>
+		<td>youtube_download.exe</td>
 	</tr>
 </table>
+
+The hash must be exactly the same. 
 
 ## Public-key
 
@@ -162,7 +159,7 @@ My PGP public key fingerprint key ID is:
 
 Enjoy!
 
-### Tecnologies
+## Tecnologies
 
 Solely written in Python 3.8.7.<br />
 Libraries imported:
@@ -171,6 +168,8 @@ Libraries imported:
 <li>sys</li>
 <li>tkinter</li>
 <li>threading</li>
+<li>Pillow</li>
+<li>io</li>
 </ul>
 <br />
 

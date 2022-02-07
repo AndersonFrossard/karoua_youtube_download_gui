@@ -68,7 +68,7 @@ def on_btn_load_cliked():
 	try:
 		gui_lbl_information.set("...Loading...")
 		if tk_entry_url_text.get() == 'teste':
-			video_url = 'https://www.youtube.com/watch?v=U6brR0LGo8A'
+			video_url = 'https://youtu.be/r3-r-YESLfk'
 		else:
 			video_url = tk_entry_url_text.get()
 		video_obj = YouTube(video_url,
@@ -153,7 +153,7 @@ def get_user_url():
 		print('Exemplo: https://www.youtube.com/watch?v=U6brR0LGo8A')
 		print('Insira a URL do vídeo :')
 		video_url = input(' ==> ')
-		if video_url == 'teste': video_url = 'https://www.youtube.com/watch?v=U6brR0LGo8A'
+		if video_url == 'teste': video_url = 'https://youtu.be/r3-r-YESLfk'
 		return video_url
 	except Exception as error:
 		print('erro')
@@ -183,6 +183,7 @@ def run_terminal():
 				on_progress_callback = on_progress_func,
 				on_complete_callback = on_complete_func )
 		
+		print(video_obj.title)
 		stream_options = create_stream_options(video_obj, dict())
 		show_user_option(stream_options)
 		user_choice_itag = get_user_option(stream_options)
@@ -203,26 +204,38 @@ import sys
 import tkinter
 from tkinter import ttk
 import threading
+import my_images
+from PIL import Image, ImageTk
+from io import BytesIO
+
 
 #/-====================
 #/- Here begins the GUI
 #/-====================
+
+def _make_program_icon(root):
+	meu_icone_raw = my_images.youtube_ico
+	meu_icone = Image.open(BytesIO(meu_icone_raw))
+	meu_icone_novo_arquivo = './icone.ico'
+	meu_icone.save(meu_icone_novo_arquivo, sizes = [(256,256)], resample = Image.LANCZOS, reducing_gap = 3.0) #ate o momento, salvar o icone e carregar a imagem, é o q trás a melhor resolução
+	root.iconbitmap(meu_icone_novo_arquivo)
+	os.remove(meu_icone_novo_arquivo)
 
 
 if is_cli():
 	run_terminal()
 	raise SystemExit
 
-example_url = 'https://www.youtube.com/watch?v=U6brR0LGo8A'
+example_url = 'https://youtu.be/r3-r-YESLfk'
 program_name = 'Karoua YouTube Downloader'
-program_icon_path = './img/Graphics-Vibe-Classic-3d-Social-Youtube.ico'
-#program_icon_path = './img/youtube.ico'
-#program_icon_path = 'youtube.xbm'
+
+
 global stream_options
 global stream_options_dict
 global video_obj
 global DOWNLOAD_FOLDER
 global gui_lbl_information
+import os
 WIDTH = 504
 HEIGHT = 326
 
@@ -242,7 +255,8 @@ lblframe_b_color = "#b3dca0"
 lblframe_c_color = "#008080"
 root.configure(bg = root_color)
 root.title(program_name)
-root.iconbitmap(default = program_icon_path)
+_make_program_icon(root)
+
 labelframe_a = tkinter.LabelFrame(root, text="Example",
 				bg=root_color)
 labelframe_a.pack(side = tkinter.TOP, 
