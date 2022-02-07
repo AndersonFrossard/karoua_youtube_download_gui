@@ -162,9 +162,17 @@ My PGP public key fingerprint key ID is:
 
 Enjoy!
 
+### Tecnologies
 
-
-
+Solely written in Python 3.8.7.<br />
+Libraries imported:
+<ul>
+<li>pytube</li>
+<li>sys</li>
+<li>tkinter</li>
+<li>threading</li>
+</ul>
+<br />
 
 ### Autor
 ---
